@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "05bb885f-a5ab-4ce5-a76d-5d6fec016488",
+		"name": "Ecom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "12420868-05bb885f-a5ab-4ce5-a76d-5d6fec016488"
+	},
+	"item": [
+		{
+			"name": "getcart",
+			"id": "812f03c0-1a03-402c-b419-a4b47667c38c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/cart",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "e5a9cd0b-91f4-4fa0-bab2-a9c67f6d6540",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/cart",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"cart"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "b9a5d9e5-6653-423f-867d-c83c86545bfe",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "fae304f6-0a44-4da1-b0a8-42ac892e6614",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "26432210-30ad-4dad-b3f3-bf05a7bd6070",
+			"key": "localhost",
+			"value": "{{localhost}}"
+		}
+	]
+}
