@@ -7,6 +7,30 @@
 	},
 	"item": [
 		{
+			"name": "user",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "060f2b9b-be37-4794-975b-8c00114be736",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/user",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "f45f65ca-f8ad-4524-9b99-cc8492849983"
+		},
+		{
 			"name": "getcart",
 			"id": "812f03c0-1a03-402c-b419-a4b47667c38c",
 			"protocolProfileBehavior": {
