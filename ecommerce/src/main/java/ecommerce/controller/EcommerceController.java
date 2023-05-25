@@ -10,4 +10,9 @@ public class EcommerceController {
 	{
         return "Hello, World!";
     }
+	@GetMapping("/cart")
+    public String cart() 
+	{
+        return "Hello, cart!";
+    }
 }
