@@ -7,48 +7,6 @@
 	},
 	"item": [
 		{
-			"name": "getcart",
-			"id": "812f03c0-1a03-402c-b419-a4b47667c38c",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{localhost}}/cart",
-					"host": [
-						"{{localhost}}"
-					],
-					"path": [
-						"cart"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "New Request",
-			"id": "e5a9cd0b-91f4-4fa0-bab2-a9c67f6d6540",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "{{localhost}}/cart",
-					"host": [
-						"{{localhost}}"
-					],
-					"path": [
-						"cart"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "hello",
 			"id": "72a3d0c8-46b7-4045-8986-e03ce5365e63",
 			"protocolProfileBehavior": {
