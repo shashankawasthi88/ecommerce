@@ -47,6 +47,66 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "hello",
+			"id": "72a3d0c8-46b7-4045-8986-e03ce5365e63",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/hello",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "4ef13a14-f9ac-4725-837b-0583e3967ecb",
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/hello",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"hello"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": "<string>"
+				}
+			]
 		}
 	],
 	"event": [
@@ -75,7 +135,14 @@
 		{
 			"id": "26432210-30ad-4dad-b3f3-bf05a7bd6070",
 			"key": "localhost",
-			"value": "{{localhost}}"
+			"value": "{{localhost}}",
+			"type": "any"
+		},
+		{
+			"id": "6bff6b73-beb8-44c8-9552-030891ee4e8f",
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
 		}
 	]
 }
