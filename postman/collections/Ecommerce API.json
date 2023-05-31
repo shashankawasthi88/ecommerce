@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "8ca88aa5-4f92-4041-8586-bef491cc03d5",
+		"name": "Ecommerce API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "5000784-8ca88aa5-4f92-4041-8586-bef491cc03d5"
+	},
+	"item": [
+		{
+			"name": "hello",
+			"item": [
+				{
+					"name": "hello",
+					"id": "7f45dde1-b199-488e-8f65-364aff443bfb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/hello",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"hello"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "52f7150d-87be-4c60-a0f4-ccef868b673e",
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/hello?variable1=variable1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"hello"
+									],
+									"query": [
+										{
+											"key": "variable1",
+											"value": "variable1",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "<string>"
+						}
+					]
+				}
+			],
+			"id": "5d31bb2f-3cf4-4c01-b9e8-8266d9c64b50"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ffe7d3df-e508-447c-9fce-449a97d0bb05",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0b3dff38-05b5-4121-931a-4e94c06ea775",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "0fe556b3-406b-418a-8795-114d1cc56215",
+			"key": "baseUrl",
+			"value": "http://localhost:8080"
+		},
+		{
+			"id": "09b3613f-fb68-42b1-a096-08cdf90428be",
+			"key": "newVariable",
+			"value": "value1",
+			"type": "string"
+		}
+	]
+}

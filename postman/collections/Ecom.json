@@ -1,14 +1,14 @@
 {
 	"info": {
-		"_postman_id": "05bb885f-a5ab-4ce5-a76d-5d6fec016488",
+		"_postman_id": "a6c84065-1de2-4990-93f9-d4aceedaae6a",
 		"name": "Ecom",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "12420868-05bb885f-a5ab-4ce5-a76d-5d6fec016488"
+		"_uid": "5000784-a6c84065-1de2-4990-93f9-d4aceedaae6a"
 	},
 	"item": [
 		{
 			"name": "hello",
-			"id": "72a3d0c8-46b7-4045-8986-e03ce5365e63",
+			"id": "48db1daf-5cf1-4d7b-9a54-be8ead7635f8",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -32,7 +32,7 @@
 			},
 			"response": [
 				{
-					"id": "4ef13a14-f9ac-4725-837b-0583e3967ecb",
+					"id": "cc3423b0-c288-4e08-9a74-1b03410916f5",
 					"name": "OK",
 					"originalRequest": {
 						"method": "GET",
@@ -55,6 +55,7 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "Text",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -71,7 +72,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b9a5d9e5-6653-423f-867d-c83c86545bfe",
+				"id": "68aa585d-523a-4599-8e3d-8e4b44bade0b",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -81,7 +82,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "fae304f6-0a44-4da1-b0a8-42ac892e6614",
+				"id": "421243b8-452f-45c1-8efd-c1860bc65d21",
 				"type": "text/javascript",
 				"exec": [
 					""
