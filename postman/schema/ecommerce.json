@@ -36,7 +36,7 @@
                 "tags": [
                     "ecommerce-controller"
                 ],
-                "operationId": "hello",
+                "operationId": "ecommerce",
                 "responses": {
                     "200": {
                         "description": "OK",
