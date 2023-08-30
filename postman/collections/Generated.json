@@ -1,0 +1,1752 @@
+{
+	"info": {
+		"_postman_id": "a4065f69-85f4-4599-be11-d13548d31e9b",
+		"name": "Generated",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "12420868-a4065f69-85f4-4599-be11-d13548d31e9b"
+	},
+	"item": [
+		{
+			"name": "therapist",
+			"item": [
+				{
+					"name": "{therapistId}",
+					"item": [
+						{
+							"name": "client",
+							"item": [
+								{
+									"name": "{clientId}",
+									"item": [
+										{
+											"name": "add Client To Therapist",
+											"id": "fbe35b6a-2efa-40a9-8dd7-0d2e204fb51f",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/therapist/:therapistId/client/:clientId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"therapist",
+														":therapistId",
+														"client",
+														":clientId"
+													],
+													"variable": [
+														{
+															"key": "therapistId",
+															"value": "<long>"
+														},
+														{
+															"key": "clientId",
+															"value": "<long>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "b270f4f1-0607-4cc6-9dcf-2221432e1560",
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "*/*"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/therapist/:therapistId/client/:clientId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"therapist",
+																":therapistId",
+																"client",
+																":clientId"
+															],
+															"variable": [
+																{
+																	"key": "therapistId"
+																},
+																{
+																	"key": "clientId"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "*/*"
+														}
+													],
+													"cookie": [],
+													"body": "<boolean>"
+												}
+											]
+										}
+									],
+									"id": "c7c42b4b-2dda-4868-b8f1-45e7bd4b15f3"
+								}
+							],
+							"id": "60928c44-893a-4e4f-b63a-d7ac6a77d38c"
+						}
+					],
+					"id": "00d3ba39-de25-4716-b303-81fd7be20bb0"
+				},
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "addClient",
+							"item": [
+								{
+									"name": "add Client",
+									"id": "67d5d129-bece-461a-b21e-b01c85a7e40d",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"emergencyContact\": \"<string>\",\n  \"address\": \"<string>\",\n  \"email\": \"<string>\",\n  \"biographicInfoId\": \"<long>\",\n  \"therapistIds\": [\n    \"<long>\",\n    \"<long>\"\n  ],\n  \"password\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/therapist/:id/addClient",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"therapist",
+												":id",
+												"addClient"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<long>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "8dde7526-b72e-4aaa-bc6e-a79e72e32f41",
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"emergencyContact\": \"<string>\",\n  \"address\": \"<string>\",\n  \"email\": \"<string>\",\n  \"biographicInfoId\": \"<long>\",\n  \"therapistIds\": [\n    \"<long>\",\n    \"<long>\"\n  ],\n  \"password\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/therapist/:id/addClient",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"therapist",
+														":id",
+														"addClient"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "<boolean>"
+										}
+									]
+								}
+							],
+							"id": "eb741fc9-ce4e-49eb-ba24-c05fb2197369"
+						},
+						{
+							"name": "get Therapist",
+							"id": "4ffd0530-6f2f-4c2b-ac6e-126aec036f2d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/therapist/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"therapist",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<long>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "22b3c637-e8d3-40f2-82d4-12ff8a7f685c",
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/therapist/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"therapist",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"organizationName\": \"<string>\",\n  \"qualification\": \"<string>\",\n  \"clientIds\": [\n    \"<long>\",\n    \"<long>\"\n  ]\n}"
+								}
+							]
+						},
+						{
+							"name": "delete Therapist",
+							"id": "956c0a83-e4b9-456d-b60b-61bd2b25d999",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/therapist/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"therapist",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<long>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "06f2e0bc-0ce4-496a-a96d-ddb90aef828d",
+									"name": "OK",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/therapist/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"therapist",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "<boolean>"
+								}
+							]
+						}
+					],
+					"id": "272d771f-10a1-44bb-b6f0-1a6bd2e8845c"
+				},
+				{
+					"name": "login",
+					"item": [
+						{
+							"name": "login",
+							"id": "bf000fdc-478e-4ae9-9e49-a0e247c8b5c1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/therapist/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"therapist",
+										"login"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "d73ec9ff-bdf6-4f73-bb4a-816007ead59d",
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"email\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/therapist/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"therapist",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"organizationName\": \"<string>\",\n  \"qualification\": \"<string>\",\n  \"clientIds\": [\n    \"<long>\",\n    \"<long>\"\n  ]\n}"
+								}
+							]
+						}
+					],
+					"id": "d36d4cbe-18ee-4092-b8bf-c77f6ce0827b"
+				},
+				{
+					"name": "update Therapist",
+					"id": "ebdc4e62-b56b-4b7a-a5dc-374190b0b969",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"organizationName\": \"<string>\",\n  \"qualification\": \"<string>\",\n  \"clientIds\": [\n    \"<long>\",\n    \"<long>\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/therapist",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"therapist"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "4d3c10cf-ad15-48b2-aa66-6b750e1f7253",
+							"name": "OK",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"organizationName\": \"<string>\",\n  \"qualification\": \"<string>\",\n  \"clientIds\": [\n    \"<long>\",\n    \"<long>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/therapist",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"therapist"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"organizationName\": \"<string>\",\n  \"qualification\": \"<string>\",\n  \"clientIds\": [\n    \"<long>\",\n    \"<long>\"\n  ]\n}"
+						}
+					]
+				},
+				{
+					"name": "create Therapist",
+					"id": "22751c4a-3fec-44cc-b9a0-9fea7a8bd2d2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"organizationName\": \"<string>\",\n  \"qualification\": \"<string>\",\n  \"clientIds\": [\n    \"<long>\",\n    \"<long>\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/therapist",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"therapist"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "ad89096a-c953-44a9-9ce3-bb155d75bea8",
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"organizationName\": \"<string>\",\n  \"qualification\": \"<string>\",\n  \"clientIds\": [\n    \"<long>\",\n    \"<long>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/therapist",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"therapist"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"organizationName\": \"<string>\",\n  \"qualification\": \"<string>\",\n  \"clientIds\": [\n    \"<long>\",\n    \"<long>\"\n  ]\n}"
+						}
+					]
+				}
+			],
+			"id": "902ca830-f1aa-4897-aa81-edcf14792b56"
+		},
+		{
+			"name": "resetPassword",
+			"item": [
+				{
+					"name": "reset Password",
+					"id": "62e96c78-e047-4a64-bd55-d7cf2f867ba6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/resetPassword?email=<string>&password=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"resetPassword"
+							],
+							"query": [
+								{
+									"description": "(Required) ",
+									"key": "email",
+									"value": "<string>"
+								},
+								{
+									"description": "(Required) ",
+									"key": "password",
+									"value": "<string>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "eb723d9e-510e-44aa-9dd3-0999f9e3c286",
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/resetPassword?email=<string>&password=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"resetPassword"
+									],
+									"query": [
+										{
+											"description": "(Required) ",
+											"key": "email",
+											"value": "<string>"
+										},
+										{
+											"description": "(Required) ",
+											"key": "password",
+											"value": "<string>"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "<boolean>"
+						}
+					]
+				}
+			],
+			"id": "929907ad-61c4-467b-ab7c-42f5c4e56b7b"
+		},
+		{
+			"name": "register",
+			"item": [
+				{
+					"name": "register",
+					"id": "51035645-423a-4988-b683-cd4945982871",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"organizationName\": \"<string>\",\n  \"qualification\": \"<string>\",\n  \"clientIds\": [\n    \"<long>\",\n    \"<long>\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "02990fd5-7282-454b-9ad2-1e06e2f7da6f",
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"organizationName\": \"<string>\",\n  \"qualification\": \"<string>\",\n  \"clientIds\": [\n    \"<long>\",\n    \"<long>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"organizationName\": \"<string>\",\n  \"qualification\": \"<string>\",\n  \"clientIds\": [\n    \"<long>\",\n    \"<long>\"\n  ]\n}"
+						}
+					]
+				}
+			],
+			"id": "5b52c7e0-d7b0-424f-8de3-5f136ddfd7de"
+		},
+		{
+			"name": "hello",
+			"item": [
+				{
+					"name": "hello",
+					"id": "be66c0c0-620d-4f8a-8b4f-7cd32e6a7a26",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/hello",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"hello"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "2cb5f2d1-7465-462f-81a1-be883fdf34f4",
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/hello",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"hello"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "<string>"
+						}
+					]
+				}
+			],
+			"id": "6a21e8b4-513a-4767-bc4c-04237643fdf4"
+		},
+		{
+			"name": "forgetPassword",
+			"item": [
+				{
+					"name": "forger Password",
+					"id": "ee1d2806-b0f1-4fa6-8d03-b38283d83b58",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/forgetPassword?email=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"forgetPassword"
+							],
+							"query": [
+								{
+									"description": "(Required) ",
+									"key": "email",
+									"value": "<string>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "698ee592-03b3-42ef-a0a0-1f2a3d80d546",
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/forgetPassword?email=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"forgetPassword"
+									],
+									"query": [
+										{
+											"description": "(Required) ",
+											"key": "email",
+											"value": "<string>"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "<boolean>"
+						}
+					]
+				}
+			],
+			"id": "5f561e6e-356a-4f5d-a6ad-3003bfa95891"
+		},
+		{
+			"name": "client",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "get Client",
+							"id": "e9f1fc18-a593-4a7f-9311-63764cfeb456",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/client/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"client",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<long>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "3b1627dd-6234-4160-9f50-571c35312876",
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/client/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"client",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"emergencyContact\": \"<string>\",\n  \"address\": \"<string>\",\n  \"email\": \"<string>\",\n  \"biographicInfoId\": \"<long>\",\n  \"therapistIds\": [\n    \"<long>\",\n    \"<long>\"\n  ],\n  \"password\": \"<string>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "delete Client",
+							"id": "cfba8d08-6894-41b1-b18b-bdf67dcdaab2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/client/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"client",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<long>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "a1f1d3c7-7873-40c5-90bf-db0e01b68eff",
+									"name": "OK",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/client/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"client",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "<boolean>"
+								}
+							]
+						}
+					],
+					"id": "8984f347-b9c2-4796-ab52-1a21bb4dbcc1"
+				},
+				{
+					"name": "login",
+					"item": [
+						{
+							"name": "client Login",
+							"id": "2ee37797-8236-4b64-8be8-c66f2c621993",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/client/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"client",
+										"login"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "12d8e334-21b6-49ae-b414-3fc93de9a4d6",
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"email\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/client/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"client",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"emergencyContact\": \"<string>\",\n  \"address\": \"<string>\",\n  \"email\": \"<string>\",\n  \"biographicInfoId\": \"<long>\",\n  \"therapistIds\": [\n    \"<long>\",\n    \"<long>\"\n  ],\n  \"password\": \"<string>\"\n}"
+								}
+							]
+						}
+					],
+					"id": "6d414c17-e5f6-479d-a2d2-c29e61cf046b"
+				},
+				{
+					"name": "update Client",
+					"id": "3f60bea6-f00c-4170-99dd-5a22cd841a6d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"emergencyContact\": \"<string>\",\n  \"address\": \"<string>\",\n  \"email\": \"<string>\",\n  \"biographicInfoId\": \"<long>\",\n  \"therapistIds\": [\n    \"<long>\",\n    \"<long>\"\n  ],\n  \"password\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/client",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"client"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "7b0ba56b-2c62-4479-b993-ebfd0ec732f5",
+							"name": "OK",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"emergencyContact\": \"<string>\",\n  \"address\": \"<string>\",\n  \"email\": \"<string>\",\n  \"biographicInfoId\": \"<long>\",\n  \"therapistIds\": [\n    \"<long>\",\n    \"<long>\"\n  ],\n  \"password\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/client",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"client"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"emergencyContact\": \"<string>\",\n  \"address\": \"<string>\",\n  \"email\": \"<string>\",\n  \"biographicInfoId\": \"<long>\",\n  \"therapistIds\": [\n    \"<long>\",\n    \"<long>\"\n  ],\n  \"password\": \"<string>\"\n}"
+						}
+					]
+				},
+				{
+					"name": "create Client",
+					"id": "92dbcb08-6859-42fc-a6f1-e2e84bf2c334",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"emergencyContact\": \"<string>\",\n  \"address\": \"<string>\",\n  \"email\": \"<string>\",\n  \"biographicInfoId\": \"<long>\",\n  \"therapistIds\": [\n    \"<long>\",\n    \"<long>\"\n  ],\n  \"password\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/client",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"client"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "fa4f57c3-cf42-4ba4-a25c-8b8c54b0753b",
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"emergencyContact\": \"<string>\",\n  \"address\": \"<string>\",\n  \"email\": \"<string>\",\n  \"biographicInfoId\": \"<long>\",\n  \"therapistIds\": [\n    \"<long>\",\n    \"<long>\"\n  ],\n  \"password\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/client",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"client"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"phoneNumber\": \"<string>\",\n  \"emergencyContact\": \"<string>\",\n  \"address\": \"<string>\",\n  \"email\": \"<string>\",\n  \"biographicInfoId\": \"<long>\",\n  \"therapistIds\": [\n    \"<long>\",\n    \"<long>\"\n  ],\n  \"password\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "73fac420-c5f6-42c2-901e-64377d569238"
+		},
+		{
+			"name": "biographicInfo",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "get Biographic Info",
+							"id": "7ebc512e-7434-40ba-bfb0-a1d39d5bd22a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/biographicInfo/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"biographicInfo",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<long>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "815ab798-23c9-426b-b5f7-a10f6263704c",
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/biographicInfo/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"biographicInfo",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<long>\",\n  \"firstName\": \"<string>\",\n  \"middleName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"dob\": \"<dateTime>\",\n  \"age\": \"<integer>\",\n  \"gender\": \"MALE\",\n  \"ethnicity\": \"<string>\",\n  \"sexualOrientation\": \"BISEXUAL\",\n  \"businessPhone\": \"<string>\",\n  \"permanentAddress\": \"<string>\",\n  \"relationshipStatus\": \"SEPARATED\",\n  \"marriageType\": \"NA\",\n  \"noOfYearsInRelationship\": \"<integer>\",\n  \"noOfChildren\": \"<integer>\",\n  \"childrenAge\": \"<string>\",\n  \"yearsSinceFormalEducationCompletion\": \"<integer>\",\n  \"employmentStatus\": \"RETIRED\",\n  \"religiousScale\": \"<integer>\",\n  \"caretaker1ReligiousScale\": \"<integer>\",\n  \"caretaker2ReligiousScale\": \"<integer>\",\n  \"motherAge\": \"<integer>\",\n  \"ageWhenMotherDied\": \"<integer>\",\n  \"fatherAge\": \"<integer>\",\n  \"ageWhenFatherDied\": \"<integer>\",\n  \"ageDuringMotherFatherSeparation\": \"<integer>\",\n  \"ageDuringMotherFatherDivorce\": \"<integer>\",\n  \"motherDivorceFrequency\": \"<integer>\",\n  \"fatherDivorceFrequency\": \"<integer>\",\n  \"ageOfLivingBrothers\": \"<string>\",\n  \"ageOfLivingSisters\": \"<string>\",\n  \"medicalHistory\": \"<string>\",\n  \"pastTherapy\": \"<boolean>\",\n  \"pastTherapyDetails\": \"<string>\",\n  \"hospitalizedForEmotionalProblem\": \"<boolean>\",\n  \"otherActiveTherapy\": \"<boolean>\",\n  \"substanceUsage\": \"<boolean>\",\n  \"substanceUsageDetails\": \"<string>\",\n  \"medicationForEmotionalProblem\": \"<boolean>\",\n  \"medicationForEmotionalProblemDetails\": \"<string>\",\n  \"pyscotherapyDetails\": \"<string>\",\n  \"attemptedSuicide\": \"<string>\",\n  \"suicidalThoughts\": \"<string>\",\n  \"pastIssues\": \"<string>\",\n  \"conditionWorseningDetails\": \"<string>\",\n  \"conditionImprovmentDetails\": \"<string>\",\n  \"pleasureActivities\": \"<string>\",\n  \"strengths\": \"<string>\",\n  \"weaknesses\": \"<string>\",\n  \"socialDifficulties\": \"<string>\",\n  \"loveSexDifficulties\": \"<string>\",\n  \"professionalDifficulties\": \"<string>\",\n  \"lifeGoals\": \"<string>\",\n  \"behaviouralChangeDesired\": \"<string>\",\n  \"motherOccupation\": \"<string>\",\n  \"fatherOccupation\": \"<string>\",\n  \"whoRaisedYou\": \"<string>\",\n  \"relationshpWithParents\": \"<string>\",\n  \"relationWithSiblings\": \"<string>\",\n  \"emotionalAbuse\": \"<boolean>\",\n  \"sexualAbuse\": \"<boolean>\",\n  \"drugAbuse\": \"<boolean>\",\n  \"householdDrugAbuse\": \"<boolean>\",\n  \"parentalSeparation\": \"<boolean>\",\n  \"incarceratedFamilyMember\": \"<boolean>\",\n  \"emotionalNeglect\": \"<boolean>\",\n  \"physicalNeglect\": \"<boolean>\",\n  \"motherAbused\": \"<boolean>\",\n  \"closeRelativeMentalIllness\": \"<string>\",\n  \"closeRelativesHospitalization\": \"<string>\",\n  \"addtionalInfo\": \"<string>\",\n  \"adopted\": \"<boolean>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "delete Biographic Info",
+							"id": "b5a63482-3f21-4121-a2b4-6192390d74db",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/biographicInfo/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"biographicInfo",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<long>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "60d88d0a-5c00-42e7-84f8-8283f8537943",
+									"name": "OK",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/biographicInfo/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"biographicInfo",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "<boolean>"
+								}
+							]
+						}
+					],
+					"id": "feec89e6-10e8-4676-b8b5-f0259d1c1ac8"
+				},
+				{
+					"name": "update Biographic Info",
+					"id": "de204fcf-6762-4b60-8787-9f167a876fd8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<long>\",\n  \"firstName\": \"<string>\",\n  \"middleName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"dob\": \"<dateTime>\",\n  \"age\": \"<integer>\",\n  \"gender\": \"MALE\",\n  \"ethnicity\": \"<string>\",\n  \"sexualOrientation\": \"BISEXUAL\",\n  \"businessPhone\": \"<string>\",\n  \"permanentAddress\": \"<string>\",\n  \"relationshipStatus\": \"SEPARATED\",\n  \"marriageType\": \"NA\",\n  \"noOfYearsInRelationship\": \"<integer>\",\n  \"noOfChildren\": \"<integer>\",\n  \"childrenAge\": \"<string>\",\n  \"yearsSinceFormalEducationCompletion\": \"<integer>\",\n  \"employmentStatus\": \"RETIRED\",\n  \"religiousScale\": \"<integer>\",\n  \"caretaker1ReligiousScale\": \"<integer>\",\n  \"caretaker2ReligiousScale\": \"<integer>\",\n  \"motherAge\": \"<integer>\",\n  \"ageWhenMotherDied\": \"<integer>\",\n  \"fatherAge\": \"<integer>\",\n  \"ageWhenFatherDied\": \"<integer>\",\n  \"ageDuringMotherFatherSeparation\": \"<integer>\",\n  \"ageDuringMotherFatherDivorce\": \"<integer>\",\n  \"motherDivorceFrequency\": \"<integer>\",\n  \"fatherDivorceFrequency\": \"<integer>\",\n  \"ageOfLivingBrothers\": \"<string>\",\n  \"ageOfLivingSisters\": \"<string>\",\n  \"medicalHistory\": \"<string>\",\n  \"pastTherapy\": \"<boolean>\",\n  \"pastTherapyDetails\": \"<string>\",\n  \"hospitalizedForEmotionalProblem\": \"<boolean>\",\n  \"otherActiveTherapy\": \"<boolean>\",\n  \"substanceUsage\": \"<boolean>\",\n  \"substanceUsageDetails\": \"<string>\",\n  \"medicationForEmotionalProblem\": \"<boolean>\",\n  \"medicationForEmotionalProblemDetails\": \"<string>\",\n  \"pyscotherapyDetails\": \"<string>\",\n  \"attemptedSuicide\": \"<string>\",\n  \"suicidalThoughts\": \"<string>\",\n  \"pastIssues\": \"<string>\",\n  \"conditionWorseningDetails\": \"<string>\",\n  \"conditionImprovmentDetails\": \"<string>\",\n  \"pleasureActivities\": \"<string>\",\n  \"strengths\": \"<string>\",\n  \"weaknesses\": \"<string>\",\n  \"socialDifficulties\": \"<string>\",\n  \"loveSexDifficulties\": \"<string>\",\n  \"professionalDifficulties\": \"<string>\",\n  \"lifeGoals\": \"<string>\",\n  \"behaviouralChangeDesired\": \"<string>\",\n  \"motherOccupation\": \"<string>\",\n  \"fatherOccupation\": \"<string>\",\n  \"whoRaisedYou\": \"<string>\",\n  \"relationshpWithParents\": \"<string>\",\n  \"relationWithSiblings\": \"<string>\",\n  \"emotionalAbuse\": \"<boolean>\",\n  \"sexualAbuse\": \"<boolean>\",\n  \"drugAbuse\": \"<boolean>\",\n  \"householdDrugAbuse\": \"<boolean>\",\n  \"parentalSeparation\": \"<boolean>\",\n  \"incarceratedFamilyMember\": \"<boolean>\",\n  \"emotionalNeglect\": \"<boolean>\",\n  \"physicalNeglect\": \"<boolean>\",\n  \"motherAbused\": \"<boolean>\",\n  \"closeRelativeMentalIllness\": \"<string>\",\n  \"closeRelativesHospitalization\": \"<string>\",\n  \"addtionalInfo\": \"<string>\",\n  \"adopted\": \"<boolean>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/biographicInfo",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"biographicInfo"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "bebd5a21-2f68-4d46-ad19-8e8f1b3cb388",
+							"name": "OK",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<long>\",\n  \"firstName\": \"<string>\",\n  \"middleName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"dob\": \"<dateTime>\",\n  \"age\": \"<integer>\",\n  \"gender\": \"MALE\",\n  \"ethnicity\": \"<string>\",\n  \"sexualOrientation\": \"BISEXUAL\",\n  \"businessPhone\": \"<string>\",\n  \"permanentAddress\": \"<string>\",\n  \"relationshipStatus\": \"SEPARATED\",\n  \"marriageType\": \"NA\",\n  \"noOfYearsInRelationship\": \"<integer>\",\n  \"noOfChildren\": \"<integer>\",\n  \"childrenAge\": \"<string>\",\n  \"yearsSinceFormalEducationCompletion\": \"<integer>\",\n  \"employmentStatus\": \"RETIRED\",\n  \"religiousScale\": \"<integer>\",\n  \"caretaker1ReligiousScale\": \"<integer>\",\n  \"caretaker2ReligiousScale\": \"<integer>\",\n  \"motherAge\": \"<integer>\",\n  \"ageWhenMotherDied\": \"<integer>\",\n  \"fatherAge\": \"<integer>\",\n  \"ageWhenFatherDied\": \"<integer>\",\n  \"ageDuringMotherFatherSeparation\": \"<integer>\",\n  \"ageDuringMotherFatherDivorce\": \"<integer>\",\n  \"motherDivorceFrequency\": \"<integer>\",\n  \"fatherDivorceFrequency\": \"<integer>\",\n  \"ageOfLivingBrothers\": \"<string>\",\n  \"ageOfLivingSisters\": \"<string>\",\n  \"medicalHistory\": \"<string>\",\n  \"pastTherapy\": \"<boolean>\",\n  \"pastTherapyDetails\": \"<string>\",\n  \"hospitalizedForEmotionalProblem\": \"<boolean>\",\n  \"otherActiveTherapy\": \"<boolean>\",\n  \"substanceUsage\": \"<boolean>\",\n  \"substanceUsageDetails\": \"<string>\",\n  \"medicationForEmotionalProblem\": \"<boolean>\",\n  \"medicationForEmotionalProblemDetails\": \"<string>\",\n  \"pyscotherapyDetails\": \"<string>\",\n  \"attemptedSuicide\": \"<string>\",\n  \"suicidalThoughts\": \"<string>\",\n  \"pastIssues\": \"<string>\",\n  \"conditionWorseningDetails\": \"<string>\",\n  \"conditionImprovmentDetails\": \"<string>\",\n  \"pleasureActivities\": \"<string>\",\n  \"strengths\": \"<string>\",\n  \"weaknesses\": \"<string>\",\n  \"socialDifficulties\": \"<string>\",\n  \"loveSexDifficulties\": \"<string>\",\n  \"professionalDifficulties\": \"<string>\",\n  \"lifeGoals\": \"<string>\",\n  \"behaviouralChangeDesired\": \"<string>\",\n  \"motherOccupation\": \"<string>\",\n  \"fatherOccupation\": \"<string>\",\n  \"whoRaisedYou\": \"<string>\",\n  \"relationshpWithParents\": \"<string>\",\n  \"relationWithSiblings\": \"<string>\",\n  \"emotionalAbuse\": \"<boolean>\",\n  \"sexualAbuse\": \"<boolean>\",\n  \"drugAbuse\": \"<boolean>\",\n  \"householdDrugAbuse\": \"<boolean>\",\n  \"parentalSeparation\": \"<boolean>\",\n  \"incarceratedFamilyMember\": \"<boolean>\",\n  \"emotionalNeglect\": \"<boolean>\",\n  \"physicalNeglect\": \"<boolean>\",\n  \"motherAbused\": \"<boolean>\",\n  \"closeRelativeMentalIllness\": \"<string>\",\n  \"closeRelativesHospitalization\": \"<string>\",\n  \"addtionalInfo\": \"<string>\",\n  \"adopted\": \"<boolean>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/biographicInfo",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"biographicInfo"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"id\": \"<long>\",\n  \"firstName\": \"<string>\",\n  \"middleName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"dob\": \"<dateTime>\",\n  \"age\": \"<integer>\",\n  \"gender\": \"MALE\",\n  \"ethnicity\": \"<string>\",\n  \"sexualOrientation\": \"BISEXUAL\",\n  \"businessPhone\": \"<string>\",\n  \"permanentAddress\": \"<string>\",\n  \"relationshipStatus\": \"SEPARATED\",\n  \"marriageType\": \"NA\",\n  \"noOfYearsInRelationship\": \"<integer>\",\n  \"noOfChildren\": \"<integer>\",\n  \"childrenAge\": \"<string>\",\n  \"yearsSinceFormalEducationCompletion\": \"<integer>\",\n  \"employmentStatus\": \"RETIRED\",\n  \"religiousScale\": \"<integer>\",\n  \"caretaker1ReligiousScale\": \"<integer>\",\n  \"caretaker2ReligiousScale\": \"<integer>\",\n  \"motherAge\": \"<integer>\",\n  \"ageWhenMotherDied\": \"<integer>\",\n  \"fatherAge\": \"<integer>\",\n  \"ageWhenFatherDied\": \"<integer>\",\n  \"ageDuringMotherFatherSeparation\": \"<integer>\",\n  \"ageDuringMotherFatherDivorce\": \"<integer>\",\n  \"motherDivorceFrequency\": \"<integer>\",\n  \"fatherDivorceFrequency\": \"<integer>\",\n  \"ageOfLivingBrothers\": \"<string>\",\n  \"ageOfLivingSisters\": \"<string>\",\n  \"medicalHistory\": \"<string>\",\n  \"pastTherapy\": \"<boolean>\",\n  \"pastTherapyDetails\": \"<string>\",\n  \"hospitalizedForEmotionalProblem\": \"<boolean>\",\n  \"otherActiveTherapy\": \"<boolean>\",\n  \"substanceUsage\": \"<boolean>\",\n  \"substanceUsageDetails\": \"<string>\",\n  \"medicationForEmotionalProblem\": \"<boolean>\",\n  \"medicationForEmotionalProblemDetails\": \"<string>\",\n  \"pyscotherapyDetails\": \"<string>\",\n  \"attemptedSuicide\": \"<string>\",\n  \"suicidalThoughts\": \"<string>\",\n  \"pastIssues\": \"<string>\",\n  \"conditionWorseningDetails\": \"<string>\",\n  \"conditionImprovmentDetails\": \"<string>\",\n  \"pleasureActivities\": \"<string>\",\n  \"strengths\": \"<string>\",\n  \"weaknesses\": \"<string>\",\n  \"socialDifficulties\": \"<string>\",\n  \"loveSexDifficulties\": \"<string>\",\n  \"professionalDifficulties\": \"<string>\",\n  \"lifeGoals\": \"<string>\",\n  \"behaviouralChangeDesired\": \"<string>\",\n  \"motherOccupation\": \"<string>\",\n  \"fatherOccupation\": \"<string>\",\n  \"whoRaisedYou\": \"<string>\",\n  \"relationshpWithParents\": \"<string>\",\n  \"relationWithSiblings\": \"<string>\",\n  \"emotionalAbuse\": \"<boolean>\",\n  \"sexualAbuse\": \"<boolean>\",\n  \"drugAbuse\": \"<boolean>\",\n  \"householdDrugAbuse\": \"<boolean>\",\n  \"parentalSeparation\": \"<boolean>\",\n  \"incarceratedFamilyMember\": \"<boolean>\",\n  \"emotionalNeglect\": \"<boolean>\",\n  \"physicalNeglect\": \"<boolean>\",\n  \"motherAbused\": \"<boolean>\",\n  \"closeRelativeMentalIllness\": \"<string>\",\n  \"closeRelativesHospitalization\": \"<string>\",\n  \"addtionalInfo\": \"<string>\",\n  \"adopted\": \"<boolean>\"\n}"
+						}
+					]
+				},
+				{
+					"name": "create Biographic Info",
+					"id": "66066a23-465a-45d0-9edc-fb1ab963c19e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<long>\",\n  \"firstName\": \"<string>\",\n  \"middleName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"dob\": \"<dateTime>\",\n  \"age\": \"<integer>\",\n  \"gender\": \"MALE\",\n  \"ethnicity\": \"<string>\",\n  \"sexualOrientation\": \"BISEXUAL\",\n  \"businessPhone\": \"<string>\",\n  \"permanentAddress\": \"<string>\",\n  \"relationshipStatus\": \"SEPARATED\",\n  \"marriageType\": \"NA\",\n  \"noOfYearsInRelationship\": \"<integer>\",\n  \"noOfChildren\": \"<integer>\",\n  \"childrenAge\": \"<string>\",\n  \"yearsSinceFormalEducationCompletion\": \"<integer>\",\n  \"employmentStatus\": \"RETIRED\",\n  \"religiousScale\": \"<integer>\",\n  \"caretaker1ReligiousScale\": \"<integer>\",\n  \"caretaker2ReligiousScale\": \"<integer>\",\n  \"motherAge\": \"<integer>\",\n  \"ageWhenMotherDied\": \"<integer>\",\n  \"fatherAge\": \"<integer>\",\n  \"ageWhenFatherDied\": \"<integer>\",\n  \"ageDuringMotherFatherSeparation\": \"<integer>\",\n  \"ageDuringMotherFatherDivorce\": \"<integer>\",\n  \"motherDivorceFrequency\": \"<integer>\",\n  \"fatherDivorceFrequency\": \"<integer>\",\n  \"ageOfLivingBrothers\": \"<string>\",\n  \"ageOfLivingSisters\": \"<string>\",\n  \"medicalHistory\": \"<string>\",\n  \"pastTherapy\": \"<boolean>\",\n  \"pastTherapyDetails\": \"<string>\",\n  \"hospitalizedForEmotionalProblem\": \"<boolean>\",\n  \"otherActiveTherapy\": \"<boolean>\",\n  \"substanceUsage\": \"<boolean>\",\n  \"substanceUsageDetails\": \"<string>\",\n  \"medicationForEmotionalProblem\": \"<boolean>\",\n  \"medicationForEmotionalProblemDetails\": \"<string>\",\n  \"pyscotherapyDetails\": \"<string>\",\n  \"attemptedSuicide\": \"<string>\",\n  \"suicidalThoughts\": \"<string>\",\n  \"pastIssues\": \"<string>\",\n  \"conditionWorseningDetails\": \"<string>\",\n  \"conditionImprovmentDetails\": \"<string>\",\n  \"pleasureActivities\": \"<string>\",\n  \"strengths\": \"<string>\",\n  \"weaknesses\": \"<string>\",\n  \"socialDifficulties\": \"<string>\",\n  \"loveSexDifficulties\": \"<string>\",\n  \"professionalDifficulties\": \"<string>\",\n  \"lifeGoals\": \"<string>\",\n  \"behaviouralChangeDesired\": \"<string>\",\n  \"motherOccupation\": \"<string>\",\n  \"fatherOccupation\": \"<string>\",\n  \"whoRaisedYou\": \"<string>\",\n  \"relationshpWithParents\": \"<string>\",\n  \"relationWithSiblings\": \"<string>\",\n  \"emotionalAbuse\": \"<boolean>\",\n  \"sexualAbuse\": \"<boolean>\",\n  \"drugAbuse\": \"<boolean>\",\n  \"householdDrugAbuse\": \"<boolean>\",\n  \"parentalSeparation\": \"<boolean>\",\n  \"incarceratedFamilyMember\": \"<boolean>\",\n  \"emotionalNeglect\": \"<boolean>\",\n  \"physicalNeglect\": \"<boolean>\",\n  \"motherAbused\": \"<boolean>\",\n  \"closeRelativeMentalIllness\": \"<string>\",\n  \"closeRelativesHospitalization\": \"<string>\",\n  \"addtionalInfo\": \"<string>\",\n  \"adopted\": \"<boolean>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/biographicInfo",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"biographicInfo"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "b4ef5671-a94b-43cb-8c38-d45f7e11d3a8",
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<long>\",\n  \"firstName\": \"<string>\",\n  \"middleName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"dob\": \"<dateTime>\",\n  \"age\": \"<integer>\",\n  \"gender\": \"MALE\",\n  \"ethnicity\": \"<string>\",\n  \"sexualOrientation\": \"BISEXUAL\",\n  \"businessPhone\": \"<string>\",\n  \"permanentAddress\": \"<string>\",\n  \"relationshipStatus\": \"SEPARATED\",\n  \"marriageType\": \"NA\",\n  \"noOfYearsInRelationship\": \"<integer>\",\n  \"noOfChildren\": \"<integer>\",\n  \"childrenAge\": \"<string>\",\n  \"yearsSinceFormalEducationCompletion\": \"<integer>\",\n  \"employmentStatus\": \"RETIRED\",\n  \"religiousScale\": \"<integer>\",\n  \"caretaker1ReligiousScale\": \"<integer>\",\n  \"caretaker2ReligiousScale\": \"<integer>\",\n  \"motherAge\": \"<integer>\",\n  \"ageWhenMotherDied\": \"<integer>\",\n  \"fatherAge\": \"<integer>\",\n  \"ageWhenFatherDied\": \"<integer>\",\n  \"ageDuringMotherFatherSeparation\": \"<integer>\",\n  \"ageDuringMotherFatherDivorce\": \"<integer>\",\n  \"motherDivorceFrequency\": \"<integer>\",\n  \"fatherDivorceFrequency\": \"<integer>\",\n  \"ageOfLivingBrothers\": \"<string>\",\n  \"ageOfLivingSisters\": \"<string>\",\n  \"medicalHistory\": \"<string>\",\n  \"pastTherapy\": \"<boolean>\",\n  \"pastTherapyDetails\": \"<string>\",\n  \"hospitalizedForEmotionalProblem\": \"<boolean>\",\n  \"otherActiveTherapy\": \"<boolean>\",\n  \"substanceUsage\": \"<boolean>\",\n  \"substanceUsageDetails\": \"<string>\",\n  \"medicationForEmotionalProblem\": \"<boolean>\",\n  \"medicationForEmotionalProblemDetails\": \"<string>\",\n  \"pyscotherapyDetails\": \"<string>\",\n  \"attemptedSuicide\": \"<string>\",\n  \"suicidalThoughts\": \"<string>\",\n  \"pastIssues\": \"<string>\",\n  \"conditionWorseningDetails\": \"<string>\",\n  \"conditionImprovmentDetails\": \"<string>\",\n  \"pleasureActivities\": \"<string>\",\n  \"strengths\": \"<string>\",\n  \"weaknesses\": \"<string>\",\n  \"socialDifficulties\": \"<string>\",\n  \"loveSexDifficulties\": \"<string>\",\n  \"professionalDifficulties\": \"<string>\",\n  \"lifeGoals\": \"<string>\",\n  \"behaviouralChangeDesired\": \"<string>\",\n  \"motherOccupation\": \"<string>\",\n  \"fatherOccupation\": \"<string>\",\n  \"whoRaisedYou\": \"<string>\",\n  \"relationshpWithParents\": \"<string>\",\n  \"relationWithSiblings\": \"<string>\",\n  \"emotionalAbuse\": \"<boolean>\",\n  \"sexualAbuse\": \"<boolean>\",\n  \"drugAbuse\": \"<boolean>\",\n  \"householdDrugAbuse\": \"<boolean>\",\n  \"parentalSeparation\": \"<boolean>\",\n  \"incarceratedFamilyMember\": \"<boolean>\",\n  \"emotionalNeglect\": \"<boolean>\",\n  \"physicalNeglect\": \"<boolean>\",\n  \"motherAbused\": \"<boolean>\",\n  \"closeRelativeMentalIllness\": \"<string>\",\n  \"closeRelativesHospitalization\": \"<string>\",\n  \"addtionalInfo\": \"<string>\",\n  \"adopted\": \"<boolean>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/biographicInfo",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"biographicInfo"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"id\": \"<long>\",\n  \"firstName\": \"<string>\",\n  \"middleName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"dob\": \"<dateTime>\",\n  \"age\": \"<integer>\",\n  \"gender\": \"MALE\",\n  \"ethnicity\": \"<string>\",\n  \"sexualOrientation\": \"BISEXUAL\",\n  \"businessPhone\": \"<string>\",\n  \"permanentAddress\": \"<string>\",\n  \"relationshipStatus\": \"SEPARATED\",\n  \"marriageType\": \"NA\",\n  \"noOfYearsInRelationship\": \"<integer>\",\n  \"noOfChildren\": \"<integer>\",\n  \"childrenAge\": \"<string>\",\n  \"yearsSinceFormalEducationCompletion\": \"<integer>\",\n  \"employmentStatus\": \"RETIRED\",\n  \"religiousScale\": \"<integer>\",\n  \"caretaker1ReligiousScale\": \"<integer>\",\n  \"caretaker2ReligiousScale\": \"<integer>\",\n  \"motherAge\": \"<integer>\",\n  \"ageWhenMotherDied\": \"<integer>\",\n  \"fatherAge\": \"<integer>\",\n  \"ageWhenFatherDied\": \"<integer>\",\n  \"ageDuringMotherFatherSeparation\": \"<integer>\",\n  \"ageDuringMotherFatherDivorce\": \"<integer>\",\n  \"motherDivorceFrequency\": \"<integer>\",\n  \"fatherDivorceFrequency\": \"<integer>\",\n  \"ageOfLivingBrothers\": \"<string>\",\n  \"ageOfLivingSisters\": \"<string>\",\n  \"medicalHistory\": \"<string>\",\n  \"pastTherapy\": \"<boolean>\",\n  \"pastTherapyDetails\": \"<string>\",\n  \"hospitalizedForEmotionalProblem\": \"<boolean>\",\n  \"otherActiveTherapy\": \"<boolean>\",\n  \"substanceUsage\": \"<boolean>\",\n  \"substanceUsageDetails\": \"<string>\",\n  \"medicationForEmotionalProblem\": \"<boolean>\",\n  \"medicationForEmotionalProblemDetails\": \"<string>\",\n  \"pyscotherapyDetails\": \"<string>\",\n  \"attemptedSuicide\": \"<string>\",\n  \"suicidalThoughts\": \"<string>\",\n  \"pastIssues\": \"<string>\",\n  \"conditionWorseningDetails\": \"<string>\",\n  \"conditionImprovmentDetails\": \"<string>\",\n  \"pleasureActivities\": \"<string>\",\n  \"strengths\": \"<string>\",\n  \"weaknesses\": \"<string>\",\n  \"socialDifficulties\": \"<string>\",\n  \"loveSexDifficulties\": \"<string>\",\n  \"professionalDifficulties\": \"<string>\",\n  \"lifeGoals\": \"<string>\",\n  \"behaviouralChangeDesired\": \"<string>\",\n  \"motherOccupation\": \"<string>\",\n  \"fatherOccupation\": \"<string>\",\n  \"whoRaisedYou\": \"<string>\",\n  \"relationshpWithParents\": \"<string>\",\n  \"relationWithSiblings\": \"<string>\",\n  \"emotionalAbuse\": \"<boolean>\",\n  \"sexualAbuse\": \"<boolean>\",\n  \"drugAbuse\": \"<boolean>\",\n  \"householdDrugAbuse\": \"<boolean>\",\n  \"parentalSeparation\": \"<boolean>\",\n  \"incarceratedFamilyMember\": \"<boolean>\",\n  \"emotionalNeglect\": \"<boolean>\",\n  \"physicalNeglect\": \"<boolean>\",\n  \"motherAbused\": \"<boolean>\",\n  \"closeRelativeMentalIllness\": \"<string>\",\n  \"closeRelativesHospitalization\": \"<string>\",\n  \"addtionalInfo\": \"<string>\",\n  \"adopted\": \"<boolean>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "85738327-ae25-405d-948e-716a36113d80"
+		}
+	],
+	"variable": [
+		{
+			"id": "ae039d10-a262-4c7c-aeae-863bb13d28e9",
+			"key": "baseUrl",
+			"value": "http://localhost:8080/therapyassist"
+		}
+	]
+}
