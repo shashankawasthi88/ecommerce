@@ -1,14 +1,14 @@
 {
 	"info": {
-		"_postman_id": "05bb885f-a5ab-4ce5-a76d-5d6fec016488",
+		"_postman_id": "17abcc1b-6e9b-4b22-a6cb-6155513dcb52",
 		"name": "Ecom",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "12420868-05bb885f-a5ab-4ce5-a76d-5d6fec016488"
+		"_uid": "12420868-17abcc1b-6e9b-4b22-a6cb-6155513dcb52"
 	},
 	"item": [
 		{
 			"name": "getcart",
-			"id": "812f03c0-1a03-402c-b419-a4b47667c38c",
+			"id": "ec8548e9-2e9e-42b2-958a-237abee88408",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -29,7 +29,7 @@
 		},
 		{
 			"name": "New Request",
-			"id": "e5a9cd0b-91f4-4fa0-bab2-a9c67f6d6540",
+			"id": "d4cb3140-7d06-4b34-bfa5-65a8fa395d68",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -53,7 +53,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b9a5d9e5-6653-423f-867d-c83c86545bfe",
+				"id": "ba3f3ce6-7073-4cdf-b895-cf2dd64f58cd",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -63,7 +63,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "fae304f6-0a44-4da1-b0a8-42ac892e6614",
+				"id": "5f6fc70f-40df-4d48-be84-6c9fa14a0d94",
 				"type": "text/javascript",
 				"exec": [
 					""
